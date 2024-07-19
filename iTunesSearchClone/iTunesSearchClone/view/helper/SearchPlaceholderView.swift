@@ -10,21 +10,14 @@ import SwiftUI
 struct SearchPlaceholderView: View {
     
     @Binding var searchTerm: String
-    let suggestions = ["rammstein", "cry to me", "maneskin"]
-    
     var body: some View {
         VStack(spacing: 20) {
             
-            Text("Trending")
+            Text("Search From Search Bar")
                 .font(.title)
-            ForEach(suggestions, id: \.self) { text in
-                Button {
-                    searchTerm = text
-                } label: {
-                    Text(text)
-                        .font(.title2)
-                }
-            }
+                .bold()
+                
+
         }
     }
 }
