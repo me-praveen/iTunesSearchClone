@@ -69,7 +69,7 @@ struct SearchView: View {
 
             }
             .searchable(text: $searchTerm)
-            .navigationTitle("Search")
+            .navigationTitle("iTunes App")
             .navigationBarTitleDisplayMode(.inline)
             
         }
